@@ -8,9 +8,9 @@ class Vehiculo {
 protected:
     string marca;
     string modelo;
-    int anioLanzamiento; // Cambiado: anio -> anioLanzamiento
+    int anioLanzamiento; 
     string placas;
-    int recorridoKM;     // Cambiado: kilometraje -> recorridoKM
+    int recorridoKM; 
 
 public:
     Vehiculo();
