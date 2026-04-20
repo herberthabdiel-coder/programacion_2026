@@ -1,25 +1,21 @@
-#ifndef CIRCULO.H
-#define CIRUCLO.H
-#include <string>
-#include "figura.h"
+#ifndef FIGURA.H 
+#define FIGURA.H 
 
+#includw <string> 
+using std::string;
 
+class Figura {
+    protected:
+    string nombre;
 
-
-class circulo : public figura {
-    private:
-    double radio;
+    public::
+    Figura(string nombre);
+    virtual ~Figura();
     
+    virtual double calcularArea() = 0;
+    virtual void describir() = 0;
 
-    public:
-    circulo(string nombre, double radio);
-    virtual circulo();
+    string obtenerNombre();
+}
 
-    virtual double calcularArea() override;
-    virtual void describir() override;
-    
-
-    double obtenRadio(),
-
-};
-#endif
+#endif 
