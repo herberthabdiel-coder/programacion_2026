@@ -48,7 +48,7 @@ Alumno::Alumno(string _nombre, int _edad, float _notaFinal) : Persona(_nombre, _
 }
 
 void Alumno::mostrar() {
-    Persona::mostrar(); // Llama al mostrar de la clase padre
+    Persona::mostrar(); 
     cout << "Nota Final: " << notaFinal << endl;
 }
 
